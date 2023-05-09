@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Seat Booking</title>
+    </head>
+    <body class="seating">
+        <a id="cancel" href="timing.html"><i class="fa fa-times" aria-hidden="true"></i></a>
+        <div class="movie-container">
+            <label> Seat Type</label>
+            <select id="movie">
+                <option value="60">Economy (RS.60)</option>
+                <option value="120">Elite (RS.120)</option>
+                <option value="170">Premium (RS.170)</option>
+                <option value="195">Super Premium (RS.195)</option>
+            </select>
+            <div id="caret"><i class="fa fa-caret-down"></i></div>
+        </div>
+
+        <ul class="showcase">
+            <li>
+                <div class="seat"></div>
+                <small>Available</small>
+            </li>
+            <li>
+                <div class="seat selected"></div>
+                <small>Selected</small>
+            </li>
+            <li>
+                <div class="seat sold"></div>
+                <small>Sold</small>
+            </li>
+        </ul>
+        <div class="seat-container">
+            <div id="screen-text">
+                <small>All eyes this way please!</small>
+            </div>
+            <div class="screen"></div>
+
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat sold"></div>
+                <div class="seat sold"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat sold"></div>
+                <div class="seat sold"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat sold"></div>
+                <div class="seat sold"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat sold"></div>
+                <div class="seat sold"></div>
+                <div class="seat sold"></div>
+                <div class="seat"></div>
+            </div>
+            
+        </div>
+        <div id="error-message" style="color: red;"></div>
+        
+        <div id="pay-btn">  
+            <button onclick="updateSelectedCount()" id="pay"><p class="text">
+                Pay For <span id="count"></span> Rs.<span id="total">0</span>
+            </p></button>
+        </div>
+        
+        <script src="seating.js"></script>
+    </body>
+</html>

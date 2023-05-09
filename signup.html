@@ -1,0 +1,53 @@
+<!DOCTYPE html>   
+<html lang="en">   
+    <head>  
+        <meta charset="UTF-8">
+        <title> Sign-Up Page </title>  
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>    
+    <body id="signup-bg">
+        <form>  
+            <div class="container">   
+                <h1>Sign-Up</h1>
+                <a id="cancel" href="index.html"><i class="fa fa-times" aria-hidden="true"></i></a>
+                <div class="form-row">
+                    <div class="form-item">
+                        <label for="input1">Registration ID</label>
+                        <input type="text" id="input1" placeholder="Enter Registration ID" name="id" pattern="\d{2}[a-zA-Z]{2}\d{4}" required>
+                    </div>
+                    <div class="form-item">
+                        <label for="input2">Username</label>
+                        <input type="text" id="input2" placeholder="Enter Username" name="name" pattern="[A-Za-z]+" required>  
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-item">
+                        <label for="input3">Password</label>
+                        <input type="password" id="input3" placeholder="Enter Password" name="password" pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?_!@$%^&*-]).{8,}$" required>
+                    </div>
+                    <div class="form-item">
+                        <label for="input4">Date Of Birth</label>
+                        <input type="text" id="input4" placeholder="DD/MM/YYYY" name="date" pattern="(0?[1-9]|[12][0-9]|3[01])/(0?[1-9]|1[0-2])/\d{4}" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-item">
+                        <label for="input5">Email ID</label>
+                        <input type="email" id="input5" placeholder="Enter Email ID" name="Email" required>
+                    </div>
+                    <div class="form-item">
+                        <label for="input6">Phone No</label>
+                        <input type="text" id="input6" placeholder="Enter Phone No" name="Phone" pattern="^(?!0{10})(?=\d{10}$)\d{10}$" required>
+                    </div>
+                </div>
+                <div id="reg-btn">  
+                <a href="#register"><button id="register"><h3>Register</h3></button><br></a>
+                </div>
+                <div id="log">
+                    <p>Already have an account? <a href="#login">Login</a></p>
+                </div>
+            </div>   
+        </form>     
+    </body>     
+</html>  
